@@ -25,13 +25,13 @@ module.exports = class {
     }
 
     _spawnGit (args) {
-        console.warn(spawnSync(config.paths.git, args, {cwd : this.wd}).stderr.toString());
-        //spawnSync(config.paths.git, args, {cwd : this.wd});
+        //console.warn(spawnSync(config.paths.git, args, {cwd : this.wd}).stderr.toString());
+        spawnSync(config.paths.git, args, {cwd : this.wd});
     }
 
     _spawnGH (args) {
-        console.warn(spawnSync(config.paths.ghCli, args, {cwd : this.wd}).stderr.toString());
-        //spawnSync(config.paths.ghCli, args, {cwd : this.wd});
+        //console.warn(spawnSync(config.paths.ghCli, args, {cwd : this.wd}).stderr.toString());
+        spawnSync(config.paths.ghCli, args, {cwd : this.wd});
     }
 
     _copy () {
