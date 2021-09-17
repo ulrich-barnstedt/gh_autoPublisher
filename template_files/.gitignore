@@ -1,4 +1,4 @@
 .idea
 node_modules
-cmake-build-debug
+cmake-*
 *.zip
